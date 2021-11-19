@@ -76,7 +76,6 @@
           console.log('open:' + this.ws.readyState);
           // ws.send('hello from client!')
 
-
           //发起鉴权请求
           this.ws.send(JSON.stringify({
             event: 'auth',
@@ -85,7 +84,6 @@
         },
         onMessage(event) {
           console.log('message:' + this.ws.readyState);
-
 
           //当用户未进入聊天室，则不接收消息
           if (this.isShow) {
